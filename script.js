@@ -1,17 +1,20 @@
-// JavaScript to change background color of the webpage
-document.getElementById('changeColorBtn').addEventListener('click', function() {
-    document.body.style.backgroundColor = 
-        document.body.style.backgroundColor === 'lightblue' ? '#f4f4f4' : 'lightblue';
+// Theme Switcher
+document.getElementById("theme-switch").addEventListener("click", function() {
+  document.body.classList.toggle("dark-theme");
+  document.body.classList.toggle("light-theme");
 });
-const themeSwitcher = document.getElementById("theme-switcher");
 
-themeSwitcher.addEventListener("change", function () {
-  document.body.className = ""; // Reset theme
-  document.body.classList.add(this.value);
+// Language Switcher
+document.getElementById("language-switch").addEventListener("change", function() {
+  const language = this.value;
+  if(language === "en") {
+    alert("Language switched to English");
+    // Additional logic for changing content to English
+  } else {
+    alert("ভাষা বাংলায় পরিবর্তিত হয়েছে");
+    // Additional logic for changing content to Bangla
+  }
 });
-const themeSwitcher = document.getElementById("theme-switcher");
-
-themeSwitcher.addEventListener("change", function () {
-  document.body.className = ""; // Reset theme
-  document.body.classList.add(this.value);
-});
+function rate(stars) {
+  document.getElementById("rating-result").textContent = "You rated " + stars + " stars!";
+}
