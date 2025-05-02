@@ -1,20 +1,12 @@
-// Theme Switcher
-document.getElementById("theme-switch").addEventListener("click", function() {
-  document.body.classList.toggle("dark-theme");
-  document.body.classList.toggle("light-theme");
+const themeBtn = document.getElementById("themeToggle");
+const langSelect = document.getElementById("langToggle");
+
+themeBtn.addEventListener("click", () => {
+  document.body.classList.toggle("light-mode");
 });
 
-// Language Switcher
-document.getElementById("language-switch").addEventListener("change", function() {
-  const language = this.value;
-  if(language === "en") {
-    alert("Language switched to English");
-    // Additional logic for changing content to English
-  } else {
-    alert("ভাষা বাংলায় পরিবর্তিত হয়েছে");
-    // Additional logic for changing content to Bangla
-  }
+langSelect.addEventListener("change", (e) => {
+  const lang = e.target.value;
+  alert("Language switched to: " + lang);
+  // Future: Load JSON translations dynamically
 });
-function rate(stars) {
-  document.getElementById("rating-result").textContent = "You rated " + stars + " stars!";
-}
