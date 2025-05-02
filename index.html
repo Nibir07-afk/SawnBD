@@ -1,48 +1,93 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>বাংলাদেশের উৎসবসমূহ</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Bangladesh Web</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>বাংলাদেশের জনপ্রিয় উৎসব</h1>
-        <nav>
-            <ul>
-                <li><a href="#pohela">পহেলা বৈশাখ</a></li>
-                <li><a href="#eid">ঈদ</a></li>
-                <li><a href="#durga">দুর্গা পূজা</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Header Section -->
+  <header>
+    <h1>Welcome to My Bangladesh Web</h1>
+    <p>Explore the culture, history, and festivals of Bangladesh</p>
+  </header>
 
-    <main>
-        <section class="festival" id="pohela">
-            <h2>পহেলা বৈশাখ</h2>
-            <p>বাংলা নববর্ষ বা পহেলা বৈশাখ বাংলাদেশের অন্যতম বড় সাংস্কৃতিক উৎসব। এদিন মানুষ নতুন জামা পড়ে, মঙ্গল শোভাযাত্রায় অংশ নেয় এবং বিভিন্ন সাংস্কৃতিক অনুষ্ঠানে যোগ দেয়।</p>
-        </section>
+  <!-- Navigation Menu -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#culture">Culture</a></li>
+      <li><a href="#festivals">Festivals</a></li>
+      <li><a href="#history">History</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
 
-        <section class="festival" id="eid">
-            <h2>ঈদ</h2>
-            <p>বাংলাদেশে দুইটি বড় ঈদ পালিত হয় – ঈদুল ফিতর ও ঈদুল আজহা। ঈদের দিন পরিবার-পরিজন একসাথে মিলিত হয়, নামাজ পড়ে এবং বিশেষ খাবার খায়।</p>
-        </section>
+  <!-- Main Content Area -->
+  <main>
+    <section id="home">
+      <h2>About Bangladesh</h2>
+      <p>Bangladesh is known for its rich culture and heritage...</p>
+    </section>
 
-        <section class="festival" id="durga">
-            <h2>দুর্গা পূজা</h2>
-            <p>হিন্দু ধর্মাবলম্বীদের সবচেয়ে বড় ধর্মীয় উৎসব হচ্ছে দুর্গা পূজা। এটি সাধারণত আশ্বিন মাসে পালিত হয় এবং পূজা মণ্ডপে নানা সাজসজ্জার মাধ্যমে অনুষ্ঠান উদযাপন করা হয়।</p>
-        </section>
-    </main>
+    <section id="culture">
+      <h2>Culture</h2>
+      <p>Bangladesh has a vibrant cultural heritage...</p>
+    </section>
 
-    <footer>
-        <p>© 2025 SawnBD - বাংলাদেশের সংস্কৃতির ছোঁয়া</p>
-    </footer>
+    <section id="festivals">
+      <h2>Festivals</h2>
+      <p>Explore the festivals like Pohela Boishakh, Durga Puja...</p>
+    </section>
+
+    <section id="history">
+      <h2>History</h2>
+      <p>The history of Bangladesh dates back to...</p>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am Nibir, the creator of this website...</p>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 My Bangladesh Web. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Settings Modal -->
+  <div id="settings-modal">
+    <div>
+      <h3>Settings</h3>
+      <label for="theme-switch">Switch Theme:</label>
+      <button id="theme-switch">Toggle Theme</button>
+
+      <br><br>
+
+      <label for="language-switch">Switch Language:</label>
+      <select id="language-switch">
+        <option value="bn">Bangla</option>
+        <option value="en">English</option>
+      </select>
+    </div>
+  </div>
 </body>
 </html>
-
-<footer>
-    <p>© 2025 SawnBD - বাংলাদেশের সংস্কৃতির ছোঁয়া</p>
-    <p>Developed by <strong>Nibir</strong></p>
-</footer>
-
+<!-- Rating System -->
+<div id="rating">
+  <h3>Rate this Website</h3>
+  <button class="star" onclick="rate(1)">⭐</button>
+  <button class="star" onclick="rate(2)">⭐</button>
+  <button class="star" onclick="rate(3)">⭐</button>
+  <button class="star" onclick="rate(4)">⭐</button>
+  <button class="star" onclick="rate(5)">⭐</button>
+  <p id="rating-result"></p>
+</div>
+<section id="about">
+  <h2>About Me</h2>
+  <p>Created by <strong>Nibir</strong></p>
+  <p>This website is designed to share the rich cultural heritage of Bangladesh, including festivals, history, and national events.</p>
+</section>
