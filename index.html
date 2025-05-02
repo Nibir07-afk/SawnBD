@@ -1,93 +1,75 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Bangladesh Web</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sawn-BD</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="explore-icon.png" type="image/png" />
 </head>
 <body>
-  <!-- Header Section -->
   <header>
-    <h1>Welcome to My Bangladesh Web</h1>
-    <p>Explore the culture, history, and festivals of Bangladesh</p>
+    <h1 class="welcome">স্বাগতম Sawn-BD-তে 🎉</h1>
+    <div class="banner-images">
+      <img src="dhaka.jpg" alt="Dhaka" />
+      <img src="pohela-boishakh.jpg" alt="Pohela Boishakh" />
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#festivals">উৎসব</a></li>
+        <li><a href="#culture">সংস্কৃতি</a></li>
+        <li><a href="#history">ইতিহাস</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#settings">Settings</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Navigation Menu -->
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#culture">Culture</a></li>
-      <li><a href="#festivals">Festivals</a></li>
-      <li><a href="#history">History</a></li>
-      <li><a href="#about">About</a></li>
-    </ul>
-  </nav>
-
-  <!-- Main Content Area -->
   <main>
-    <section id="home">
-      <h2>About Bangladesh</h2>
-      <p>Bangladesh is known for its rich culture and heritage...</p>
+    <section id="festivals">
+      <h2>বাংলাদেশের উৎসব</h2>
+      <p>এখানে সব ধর্মীয়, জাতীয় ও স্থানীয় উৎসবের বিস্তারিত বর্ণনা থাকবে।</p>
     </section>
 
     <section id="culture">
-      <h2>Culture</h2>
-      <p>Bangladesh has a vibrant cultural heritage...</p>
-    </section>
-
-    <section id="festivals">
-      <h2>Festivals</h2>
-      <p>Explore the festivals like Pohela Boishakh, Durga Puja...</p>
+      <h2>বাংলাদেশের সংস্কৃতি</h2>
+      <p>সাহিত্য, পোশাক, খাবার, সঙ্গীত ও বিখ্যাত ব্যক্তিত্বদের বিস্তারিত বর্ণনা।</p>
     </section>
 
     <section id="history">
-      <h2>History</h2>
-      <p>The history of Bangladesh dates back to...</p>
+      <h2>ইতিহাস</h2>
+      <p>বাংলাদেশের ইতিহাস A-Z পর্যন্ত বিস্তারিতভাবে তুলে ধরা হবে।</p>
     </section>
 
     <section id="about">
-      <h2>About Me</h2>
-      <p>I am Nibir, the creator of this website...</p>
+      <h2>আমার সম্পর্কে</h2>
+      <p>আমি Nibir। এই ওয়েবসাইটটি বানানোর উদ্দেশ্য হচ্ছে বাংলাদেশের সংস্কৃতি ও ইতিহাসকে সবার কাছে তুলে ধরা।</p>
+    </section>
+
+    <section id="settings">
+      <h2>সেটিংস</h2>
+      <div class="settings-option">
+        <label>থিম পরিবর্তন: </label>
+        <button id="themeToggle">Dark/Light</button>
+      </div>
+      <div class="settings-option">
+        <label>রেটিং দিন: </label>
+        <span class="stars">⭐️⭐️⭐️⭐️⭐️</span>
+      </div>
+      <div class="settings-option">
+        <label>ভাষা:</label>
+        <select id="langToggle">
+          <option value="bn">বাংলা</option>
+          <option value="en">English</option>
+        </select>
+      </div>
     </section>
   </main>
 
-  <!-- Footer Section -->
   <footer>
-    <p>&copy; 2025 My Bangladesh Web. All Rights Reserved.</p>
+    <p>© 2025 Sawn-BD | Developed by Nibir</p>
   </footer>
 
-  <!-- Settings Modal -->
-  <div id="settings-modal">
-    <div>
-      <h3>Settings</h3>
-      <label for="theme-switch">Switch Theme:</label>
-      <button id="theme-switch">Toggle Theme</button>
-
-      <br><br>
-
-      <label for="language-switch">Switch Language:</label>
-      <select id="language-switch">
-        <option value="bn">Bangla</option>
-        <option value="en">English</option>
-      </select>
-    </div>
-  </div>
+  <script src="script.js"></script>
 </body>
 </html>
-<!-- Rating System -->
-<div id="rating">
-  <h3>Rate this Website</h3>
-  <button class="star" onclick="rate(1)">⭐</button>
-  <button class="star" onclick="rate(2)">⭐</button>
-  <button class="star" onclick="rate(3)">⭐</button>
-  <button class="star" onclick="rate(4)">⭐</button>
-  <button class="star" onclick="rate(5)">⭐</button>
-  <p id="rating-result"></p>
-</div>
-<section id="about">
-  <h2>About Me</h2>
-  <p>Created by <strong>Nibir</strong></p>
-  <p>This website is designed to share the rich cultural heritage of Bangladesh, including festivals, history, and national events.</p>
-</section>
