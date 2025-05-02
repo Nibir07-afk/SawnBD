@@ -54,3 +54,87 @@ button {
 button:hover {
     background-color: #45a049;
 }
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+header {
+  background-color: #28a745;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+#theme-switcher {
+  margin-left: 1rem;
+}
+
+main {
+  padding: 2rem;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  color: #eee;
+  margin-top: 2rem;
+}
+
+/* Dark Theme */
+body.dark {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+body.dark header {
+  background-color: #333;
+}
+body.dark nav a {
+  color: #f0f0f0;
+}
+body.dark footer {
+  background-color: #000;
+}
+
+/* Classic Theme */
+body.classic {
+  background-color: #f9f2ec;
+  color: #333;
+}
+body.classic header {
+  background-color: #964B00;
+}
+body.classic nav a {
+  color: #fff;
+}
+body.classic footer {
+  background-color: #222;
+}
