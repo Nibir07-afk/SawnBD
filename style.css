@@ -1,0 +1,21 @@
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 18px;
+    text-align: center;
+    margin: 20px;
+}
