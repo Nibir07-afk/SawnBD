@@ -50,4 +50,9 @@ footer {
     padding: 10px;
     color: #ffffff;
 }
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #bbbbbb;
+}
 
